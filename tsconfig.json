@@ -1,21 +1,27 @@
-
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "lib": ["ES2020", "DOM"],
+    "target": "ES2018",
+    "module": "CommonJS",
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
     "jsx": "react",
-    "module": "esnext",
-    "moduleResolution": "Node",
-    "target": "ES5",
     "strict": true,
-    "resolveJsonModule": true,
-    "typeRoots": ["./node_modules/@types"],
+    "pretty": true,
+    "sourceMap": true,
     "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    }
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true
   },
-  "include": ["./src/**/*", "images.d.ts", "jest.config.js", "setupTests.tsx"],
   "exclude": ["node_modules"]
 }
