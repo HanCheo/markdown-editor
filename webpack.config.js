@@ -56,7 +56,6 @@ export default (env) => {
     output: {
       path: __dirname + '/build',
       filename: '[name].js',
-    },
-    devtool: 'inline-source-map',
+    }
   };
 };
